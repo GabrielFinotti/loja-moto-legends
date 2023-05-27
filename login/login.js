@@ -5,7 +5,7 @@ function validarLogin() {
     var senha = document.getElementById("senha-input").value;
 
     // Verificação
-    if (email !== "" && senha !== "") {
+    if (email !== ""&& email.indexOf('@')!==-1 && email.indexOf('.') !==-1 && senha !== "") {
         // Sucesso
         alert("Seu Login foi concluído com sucesso!");
         
