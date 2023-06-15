@@ -1,5 +1,21 @@
+/*Componentes e resets*/
+@font-face {
+    font-family: 'Mulish';
+    src: url(../fonts/Mulish-VariableFont_wght.woff);
+}
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-family: 'Mulish', sans-serif;
+    font-size: 1em;
+}
+
+a{
+    text-decoration: none;
+}
+/*Cabeçalho*/
