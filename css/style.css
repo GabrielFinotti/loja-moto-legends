@@ -25,6 +25,7 @@ header{
     background: linear-gradient(30deg,rgba(0,0,0,1), rgba(0,0,0,0.6), rgba(0,0,0,1));
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 0 5px;
 }
 
@@ -44,14 +45,13 @@ nav{
 #button-img{
     position: relative;
     width: 30px;
-    padding-top: 12px;
 }
 
 ul{
     background-color: orange;
     border-radius: 10px 0 0 10px;
     position: absolute;
-    top: 45px;
+    top: 71px;
     right:0;
     list-style: none;
     width: 140px;
@@ -59,7 +59,7 @@ ul{
     opacity: 0;
     animation-name: nav-animation;
     animation-play-state: paused;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
     animation-delay: 300ms;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
@@ -79,7 +79,7 @@ li{
     opacity: 0;
     padding: 10px 0;
     transition-property: padding;
-    transition-duration: 3s;
+    transition-duration: 2s;
     transition-timing-function: ease-out;
     animation-name: list-nav;
     animation-duration: 4s;
@@ -105,7 +105,6 @@ li a, li a:visited{
 }
 
 #search{
-    padding-top: 14px;
     width: 60%;
 }
 
@@ -116,7 +115,7 @@ li a, li a:visited{
     border-radius: 10px;
     position: relative;
     width: 100%;
-    padding: 5px;
+    padding: 10px;
 }
 
 #search-produtos::placeholder{
