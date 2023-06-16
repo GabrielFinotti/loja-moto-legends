@@ -18,4 +18,111 @@ body{
 a{
     text-decoration: none;
 }
+/*Fim reset*/
+
 /*Cabeçalho*/
+header{
+    background: linear-gradient(30deg,rgba(0,0,0,1), rgba(0,0,0,0.6), rgba(0,0,0,1));
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+#logo{
+    width: 80px;
+}
+
+nav{
+    order: 3;
+}
+
+#button-nav{
+    border: none;
+    background: none;
+}
+
+#button-img{
+    position: relative;
+    width: 30px;
+    padding-top: 12px;
+}
+
+ul{
+    background-color: orange;
+    border-radius: 10px 0 0 10px;
+    position: absolute;
+    top: 45px;
+    right:0;
+    list-style: none;
+    width: 140px;
+    z-index: 10000;
+    opacity: 0;
+    animation-name: nav-animation;
+    animation-play-state: paused;
+    animation-duration: 1.5s;
+    animation-delay: 300ms;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes nav-animation {
+    from{
+        right:-140px;
+    }
+    to{
+        opacity: 1;
+        right: 0;
+    }
+}
+
+li{
+    opacity: 0;
+    padding: 10px 0;
+    transition-property: padding;
+    transition-duration: 3s;
+    transition-timing-function: ease-out;
+    animation-name: list-nav;
+    animation-duration: 4s;
+    animation-delay: 600ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes list-nav {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+li a, li a:visited{
+    color: black;
+    font-weight: 600;
+    padding: 5px 0;
+    padding-left: 6px;
+}
+
+#search{
+    padding-top: 14px;
+    width: 60%;
+}
+
+#search-produtos{
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+    padding: 5px;
+}
+
+#search-produtos::placeholder{
+    color: rgba(255,255,255,1);
+}
+
+#search-produtos:focus{
+    outline: none;
+}
