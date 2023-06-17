@@ -58,9 +58,9 @@ ul{
     z-index: 10000;
     opacity: 0;
     animation-name: nav-animation;
-    animation-play-state: paused;
+    animation-play-state: running;
     animation-duration: 1s;
-    animation-delay: 300ms;
+    animation-delay: 400ms;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
 }
@@ -79,11 +79,12 @@ li{
     opacity: 0;
     padding: 10px 0;
     transition-property: padding;
-    transition-duration: 2s;
-    transition-timing-function: ease-out;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 1s;
     animation-name: list-nav;
-    animation-duration: 4s;
-    animation-delay: 600ms;
+    animation-duration: 2s;
+    animation-delay: 1.2s;
     animation-fill-mode: forwards;
 }
 
