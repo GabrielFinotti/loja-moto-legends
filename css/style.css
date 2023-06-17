@@ -62,7 +62,7 @@ ul{
     top: 71px;
     right:0;
     list-style: none;
-    width: 140px;
+    width: 190px;
     z-index: 10000;
     opacity: 0;
     animation-name: nav-animation;
@@ -117,6 +117,7 @@ li{
 
 #search{
     width: 60%;
+    max-width: 700px;
 }
 
 #search-produtos{
@@ -135,4 +136,71 @@ li{
 
 #search-produtos:focus{
     outline: none;
+}
+/*Fim cabeçalho*/
+
+/*Main*/
+#img-banner img{
+    position: relative;
+    width: 100%;
+}
+
+#produtos-main{
+    position: relative;
+    top: -4px;
+    display: flex;
+}
+
+#destaques{
+    display: flex;
+    flex-direction: column;
+}
+
+#principal{
+    display: flex;
+    flex-direction: column;
+}
+
+#principal article> img{
+    width: 100%;
+}
+
+#principal article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#principal article> h3{
+    background: linear-gradient(rgba(255,165,0,1), rgba(255,165,0,0.8), rgba(255,165,0,0.6), rgba(255,165,0,0.4));
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.group-produtos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.group-produtos article{
+    width: 100%;
+}
+
+.group-produtos article img{
+
+}
+
+.desc-produto{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.valor{
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
 }
