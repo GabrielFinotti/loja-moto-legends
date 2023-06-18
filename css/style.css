@@ -141,13 +141,11 @@ li{
 
 /*Main*/
 #img-banner img{
-    position: relative;
     width: 100%;
 }
 
 #produtos-main{
     position: relative;
-    top: -4px;
     display: flex;
 }
 
