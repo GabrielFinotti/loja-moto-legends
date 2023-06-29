@@ -13,6 +13,8 @@
 body{
     font-family: 'Mulish', sans-serif;
     font-size: 1em;
+    max-width: 1920px;
+    margin: auto;
 }
 
 a{
@@ -150,7 +152,7 @@ li{
 }
 
 #destaques{
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 
@@ -186,8 +188,9 @@ li{
     width: 100%;
 }
 
-.group-produtos article img{
-
+.group-produtos article> img{
+    width: 120px;
+    height: 120px;
 }
 
 .desc-produto{
@@ -200,5 +203,35 @@ li{
 .valor{
     text-align: center;
     font-size: 12px;
+    font-weight: bold;
+}
+/*Fim main*/
+
+/*Footer*/
+footer{
+    background-color: orange;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+#link-footer p{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#link-footer img{
+    width: 25px;
+}
+
+#link-footer a, #link-footer a:visited{
+    color: black;
+    font-weight: bold;
+}
+
+#copy p{
+    text-align: justify;
     font-weight: bold;
 }
