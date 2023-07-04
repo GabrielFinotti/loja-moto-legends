@@ -1,0 +1,155 @@
+@font-face {
+    font-family: "Mulish";
+    src: url(/fonts/Mulish-VariableFont_wght.woff);
+}
+/*Resete de formatação*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Mulish";
+}
+
+body{
+    font-size: 1em;
+    min-width: 360px;
+}
+
+a{
+    text-decoration: none;
+}
+/*Ativadores/Desativadores*/
+.active-link-top{
+    background-color: orange;
+    border-top-left-radius: 7px;
+    color: black !important;
+}
+
+.active-link-buttom{
+    background-color: orange;
+    border-bottom-left-radius: 7px;
+    color: black !important;
+}
+
+.active-link{
+    background-color: orange;
+    color: black !important;
+}
+
+.active-nav{
+    animation-name: showNavBar;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.desactive{
+    display: none;
+}
+/*KeyFrames*/
+@keyframes showNavBar {
+    from{
+        opacity: 0;
+        right: -200px;
+    }
+
+    to{
+        opacity: 1;
+        right: 0;
+    }
+}
+
+@keyframes showLinks {
+    0%{
+        opacity: 0;
+        padding: 0;
+    }
+
+    50%{
+        padding: 10px;
+    }
+
+    100%{
+        opacity: 1;
+        padding: 10px;
+    }
+}
+/*Formatação para Mobile*/
+
+/*Formtação do header*/
+header{
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#search{
+    display: flex;
+}
+
+#search input, #search input:focus{
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 200px;
+    text-indent: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#search input::placeholder{
+    font-size: 16px;
+    text-indent: 10px;
+    font-weight: bold;
+}
+
+#search button, #search button:focus{
+    border: none;
+    margin-left: 2px;
+    background: none;
+    outline: none;
+}
+
+#search button > img{
+    width: 30px;
+}
+
+#button-nav button, #button-nav button:focus{
+    border: none;
+    background: none;
+    outline: none;
+}
+
+#button-nav button > img{
+    width: 35px;
+}
+
+#nav-bar{
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    width: 50%;
+    z-index: 10000000000;
+    animation-name: showNavBar;
+}
+
+#nav-bar a, #nav-bar a:visited{
+    color: orange;
+    font-weight: bold;
+    opacity: 0;
+    animation-name: showLinks;
+    animation-timing-function: ease-out;
+    animation-duration: 2.5s;
+    animation-delay: 1.3s;
+    animation-fill-mode: forwards;
+}
+
+#shop{
+    display: none;
+}

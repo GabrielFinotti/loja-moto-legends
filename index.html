@@ -3,302 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moto Legends&reg;</title>
-
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="conteudos/logo.png" type="image/x-icon">
+    <title>Loja Moto Legends&reg;</title>
+    <!--Links de arquivos externos-->
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+    <!--Scripts de incialização-->
 </head>
 <body>
-    <!--Cabeçalho-->
+    <!--Estrutura do cabeçalho-->
     <header>
-        <a href="index.html">
-            <img src="conteudos/logo.png" alt="Logo" id="logo">
-        </a>
+        <div id="logo">
+            <img src="" alt="Logo">
+        </div>
+        <!--Pesquisa dos produtos-->
+        <div id="search">
+            <input type="search" name="search-products" placeholder="Pesquise pelo produto">
 
-        <nav>
-            <button type="menu" id="button-nav">
-                <img src="conteudos/menu-fechado.png" alt="seleção" id="button-img">
+            <button type="button">
+                <img src="source/icons/search.png" alt="Pesquisar">
             </button>
+        </div>
+        <!--Barra de navegação-->
+        <nav>
+            <div id="button-nav">
+                <button type="button">
+                    <img src="source/icons/open-nav.png" alt="Navegação">
+                </button>
+            </div>
 
-            <ul id="nav-bar">
-                <li class="active">
-                    <a href="index.html" class="active-link">Início</a>
-                </li>
-           
-                <li>
-                    <a href="produto/produtos.html">Produtos</a>
-                </li>
-           
-                <li>
-                    <a href="promocao/promocao.html">Promoção</a>
-                </li>
-        
-                <li>
-                    <a href="cadastro/cadastro.html">Cadastro</a>
-                </li>
-
-                <li>
-                    <a href="conta/conta.html">Conta</a>
-                </li>
-
-                <li>
-                    <a href="carrinho/carrinho.html">Carrinho</a>
-                </li>
-            </ul>
+            <div id="nav-bar">
+                <a href="index.html" class="active-link-top">Início</a>
+                <a href="conta/conta.html">Conta</a>
+                <a href="produtos/produtos.html">Produtos</a>
+                <a href="carrinho/carrinho.html">Carrinho</a>
+            </div>
         </nav>
-
-        <section id="search">
-            <input type="search" name="search" placeholder="Pesquise por um produto" id="search-produtos">
-        </section>
     </header>
-    <!--Fim cabeçalho-->
 
     <main>
-        <article id="img-banner">
-            <img src="conteudos/motobanner.png" alt="">
-        </article>
 
-        <section id="produtos-main">
-            <div id="destaques">
-                <h3>Destaques</h3>
-
-                <article>
-                    <img src="" alt="">
-
-                    <p></p>
-                </article>
-                
-                <article>
-                    <img src="" alt="">
-
-                    <p></p>
-                </article>
-
-                <article>
-                    <img src="" alt="">
-
-                    <p></p>
-                </article>
-
-                <article>
-                    <img src="" alt="">
-
-                    <p></p>
-                </article>
-
-                <article>
-                    <img src="" alt="">
-
-                    <p></p>
-                </article>
-
-                <article>
-                    <img src="" alt="">
-
-                    <p></p>
-                </article>
-            </div>
-
-            <div id="principal">
-                <article>
-                    <img src="conteudos/bannerpneu.png" alt="Pneu">
-
-                    <h3>Pneus</h3>
-
-                    <div class="group-produtos">
-                        <article>
-                            <img src="imgProduto/Pneu xj6.png" alt="Pneu Xj6">
-
-                            <p class="desc-produto">
-                                Pneu xj6 pirelli
-                            </p>
-
-                            <p class="valor">R$586,00</p>
-                        </article>
-
-                        <article>
-                            <img src="imgProduto/Pneu titan.png" alt="Pneu Titan">
-
-                            <p class="desc-produto">
-                                Pneu titan pirelli
-                            </p>
-
-                            <p class="valor">R$310,00</p>
-                        </article>
-
-                        <article>
-                            <img src="imgProduto/Pneu xre300.png" alt="">
-
-                            <p class="desc-produto">
-                                Pneu xre 300 pirelli
-                            </p>
-
-                            <p class="valor">R$432,00</p>
-                        </article>
-                    </div>
-                </article>
-
-                <article>
-                    <img src="conteudos/banner carenagem.png" alt="Carenagem">
-
-                    <h3>Carenagens</h3>
-
-                    <div class="group-produtos">
-                        <article>
-                            <img src="imgProduto/caren cb300.png" alt="">
-
-                            <p class="desc-produto">
-                                Carenagem CB 300
-                            </p>
-
-                            <p class="valor">R$368,00</p>
-                        </article>
-
-                        <article>
-                            <img src="imgProduto/caren titan.png" alt="">
-
-                            <p class="desc-produto">
-                                Carenagem Titan 160
-                            </p>
-
-                            <p class="valor">R$280,00</p>
-                        </article>
-
-                        <article>
-                            <img src="imgProduto/caren xre300.png" alt="">
-
-                            <p class="desc-produto">
-                                Carenagem XRE 300
-                            </p>
-
-                            <p class="valor">R$415,00</p>
-                        </article>
-                    </div>
-                </article>
-
-                <article>
-                    <img src="conteudos/banner protetor.png" alt="Protetores">
-
-                    <h3>Protetores</h3>
-
-                    <div class="group-produtos">
-                        <article>
-                            <img src="imgProduto/protetor factor.png" alt="">
-
-                            <p class="desc-produto">
-
-                            </p>
-
-                            <p class="valor"></p>
-                        </article>
-
-                        <article>
-                            <img src="imgProduto/protetor titan.png" alt="">
-
-                            <p class="desc-produto">
-
-                            </p>
-
-                            <p class="valor"></p>
-                        </article>
-
-                        <article>
-                            <img src="imgProduto/protetor xre300.png" alt="">
-
-                            <p class="desc-produto">
-
-                            </p>
-
-                            <p class="valor"></p>
-                        </article>
-                    </div>
-                </article>
-
-                <article>
-                    <img src="conteudos/banner bau.png" alt="Báus">
-
-                    <h3>Baús</h3>
-
-                    <div class="group-produtos">
-                        <article>
-                            <img src="imgProduto/bau 28l.jpg" alt="">
-
-                            <p class="desc-produto">
-
-                            </p>
-
-                            <p class="valor"></p>
-                        </article>
-
-                        <article>
-                            <img src="imgProduto/bau 45l.png" alt="">
-
-                            <p class="desc-produto">
-
-                            </p>
-
-                            <p class="valor"></p>
-                        </article>
-
-                        <article>
-                            <img src="imgProduto/bau 80l.png" alt="">
-
-                            <p class="desc-produto">
-
-                            </p>
-
-                            <p class="valor"></p>
-                        </article>
-                    </div>
-                </article>
-            </div>
-        </section>
     </main>
 
     <footer>
-        <div id="copy">
-            <p>
-                Todos os direitos reservados
-            </p>
 
-            <p>
-                &copy;2023 Gabriel H. Finotti, Júlia Lucena
-            </p>
-        </div>
-
-        <div id="link-footer">
-            <p>
-                <img src="conteudos/icon github.png" alt="GitHub">
-
-                <span>
-                    <a href="https://github.com/GabrielFinotti">Gabriel H. Finotti</a>
-                </span>
-            </p>
-
-            <p>
-                <img src="conteudos/icon-likedin.png" alt="Linkedin">
-
-                <span>
-                    <a href="https://www.linkedin.com/in/gabriel-h-finotti-650371276/">Gabriel H. Finotti</a>
-                </span>
-            </p>
-
-            <p>
-                <img src="conteudos/icon github.png" alt="GitHub">
-
-                <span>
-                    <a href="https://github.com/julilucy">Júlia Lucena</a>
-                </span>
-            </p>
-
-            <p>
-                <img src="conteudos/icon-likedin.png" alt="Linkedin">
-
-                <span>
-                    <a href="https://www.linkedin.com/in/maria-julia-lucena/">Júlia Lucena</a>
-                </span>
-            </p>
-        </div>
     </footer>
+
+
+    <script src="script/script.js"></script>
 </body>
 </html>

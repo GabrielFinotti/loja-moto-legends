@@ -1,2 +1,2 @@
 # loja-moto-legends
- Projeto de uma loja digital de peças de motos
+ Projeto base de uma Loja fictícia de vendas de peças de motocicletas
