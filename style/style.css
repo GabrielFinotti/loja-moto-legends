@@ -39,14 +39,11 @@ a {
 }
 
 .active-nav {
+  display: flex;
   animation-name: showNavBar;
   animation-duration: 1.2s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
-}
-
-.desactive {
-  display: none;
 }
 
 /*KeyFrames*/
@@ -136,7 +133,7 @@ header {
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
   background-color: black;
-  display: flex;
+  display: none;
   flex-direction: column;
   position: absolute;
   right: 0;
