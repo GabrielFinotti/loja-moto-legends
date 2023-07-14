@@ -39,9 +39,9 @@ a {
 }
 
 .active-nav {
-  display: flex;
+  display: flex !important; 
   animation-name: showNavBar;
-  animation-duration: 1.2s;
+  animation-duration: 1s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
@@ -140,7 +140,6 @@ header {
   opacity: 0;
   width: 50%;
   z-index: 10000000000;
-  animation-name: showNavBar;
 }
 
 #nav-bar a,
@@ -150,8 +149,8 @@ header {
   opacity: 0;
   animation-name: showLinks;
   animation-timing-function: ease-out;
-  animation-duration: 2.5s;
-  animation-delay: 1.3s;
+  animation-duration: 1.5s;
+  animation-delay: 1s;
   animation-fill-mode: forwards;
 }
 
